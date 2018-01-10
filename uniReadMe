@@ -1,0 +1,46 @@
+Developer Name: Farzyab Gohar
+Developer email: farzyabgohar@cmail.carleton
+Development Date: 9th Nov 2017
+
+Program purpose: 
+	To populate an array of people at Carleton University that are either Employees or Students, and providing the 		user with an option to either:
+		1. print the records of all students
+		2. print the records of all employees
+		3. search a student record by family name
+		4. or provide a summary of all the records
+
+Program limitations/issues:
+	The program is only able to display upto 20 records (made up of both employees and students)
+	When searching student by family name, the search term's first letter must be capital, or else the record will not be found (e.g "Smith" will return a match but "smith" will not)
+	The program will keep running until the user quits
+	The populated array of people at Carleton University will be the same each iteration of the loop
+
+Example output:
+	Once the menu has loaded, if the user picks option 2, the records of all students will be displayed
+	
+	input: 
+		2
+		
+	Expected output:
+		Jane Farmer                       GPA:  3, Courses: 15, Tuition: 19790.55
+		Dina Mart                         GPA:  2, Courses: 27, Tuition:  1662.57
+		Don Farmer                        GPA:  0, Courses: 26, Tuition: 16293.42
+		David Mart                        GPA:  7, Courses: 29, Tuition: 17980.56
+		Jane Smith                        GPA:  9, Courses: 13, Tuition: 21109.14
+		David Johnson                     GPA:  1, Courses: 20, Tuition:  4125.42
+		Jennifer Farmer                   GPA:  4, Courses: 15, Tuition:  6852.69
+		David Smith                       GPA:  6, Courses: 18, Tuition:  7965.36
+		Justin Farmer                     GPA:  4, Courses: 39, Tuition:  3101.67
+		Dina Smith                        GPA:  7, Courses: 22, Tuition:  7723.17
+		Don Door    					  GPA:  4, Courses: 19, Tuition: 11336.13
+		
+Source files:
+	uni.c, employee.c, student.c, populateRecords.c
+
+Exact compilation command:
+	gcc -o uni uni.c
+
+Launching and operating instructions:
+	./uni
+	
+
